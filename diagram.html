@@ -8,11 +8,20 @@
 </head>
 <body>
 <div id="taskbar">
-    <h1 id="nadpis">Diagram</h1>
-    <div id="button"><button id="sidebar-button" onclick="openNav()">-</button></div>
+    <h1 class="nadpis">Diagram</h1>
+    <div class="button"><button class="sidebar-button" onclick="openNav()">-</button></div>
 </div>
-<div id="obr"><img src="diagram.drawio.png" alt="diagram"></div>
-<div><img src="ground-check.drawio.png"></div>
+<div id="obr1">
+    <img id="img1" src="input.drawio.png" alt="diagram">
+    <br>
+    <p>Vstupy</p>
+</div>
+<div id="obr2">
+    <img id="img2" src="ground-check.drawio.png">
+</div>
+<div id="obr3">
+    <img id="img3" src="wip.png">
+</div>
 <div id="sidebar-div"></div>
 <div id="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -21,6 +30,5 @@
     <a href="nacrt.html">Náčrt</a>
     <a href="hra.html">O Hře</a>
 </div>
-<a href="https://app.diagrams.net/?src=about" target="_blank">Drawio</a>
 </body>
 </html>
