@@ -30,6 +30,6 @@ function iLikeCookies() {
 }
 
 function selfDestruction() {
-    document.body.style.display = "none"
+    document.getElementsByClassName("sd").style.display = "none"
     document.body.style.backgroundImage = url("images/ceo-tim-cook-apple-conference-4ggdeq8rn6tijxr4.png");
 }
