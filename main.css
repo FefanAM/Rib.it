@@ -53,19 +53,17 @@ nav {
     float:left;
 }
 #sidebar {
-    height: 100%; /* 100% Full-height */
-    width: 0px; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: rgb(0, 0, 0)f5f;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.3s;
 }
-
-/* The navigation menu links */
 #sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -82,14 +80,10 @@ nav {
     display:block;
     transition: 0.3s;
 }
-
-/* When you mouse over the navigation links, change their color */
 #sidebar a:hover, #sidebar-p a:hover {
     cursor: url("select.cur"), pointer;
     color: #f1f1f1;
 }
-
-/* Position and style the close button (top right corner) */
 #sidebar .closebtn {
     position: absolute;
     top: 0;
@@ -107,69 +101,19 @@ nav {
 
 #sidebar-p {
     width:  100%;
-    position: fixed; /* Stay in place */
-    z-index: 0; /* Stay on top */
-    top: 0; /* Stay at the top */
+    position: fixed;
+    z-index: 0;
+    top: 0;
     left: 0;
-    background-color: #000000; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 200px; /* Place content 60px from the top */
-    transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: #000000;
+    overflow-x: hidden;
+    padding-top: 200px;
+    transition: 0.3s;
     height: 0px;
 }
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
     padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-@media screen and (max-height: 2340px) and (max-width: 1080px) {
-    html, body {
-        background-color: limegreen;
-    }
-    .nadpis2 {
-        margin-left: 150px;
-        margin-top: 40px;
-        font-size: 400%;
-    }
-}
-@media screen and (max-height: 2340px) and (max-width: 1080px) {
-    .sidebar-button {
-        padding: 40px 45px;
-        border-radius: 20px;
-    }
-    .button {
-        margin-top: 25px;
-        margin-left: 25px;
-    }
-    .taskbar, .sidebar {
-        display: none;
-    }
-}
-@media screen and (max-height: 1080px) and (max-width: 1920px) {
-#taskbar {
-    height:75px;
-}
-
-#taskbar-phone, #sidebar-p  {
-    display: none;
-}
-}
-
-
-#taskbar, #taskbar-phone {
-    z-index: 1;
-    left:0;
-    width: 100%;
-    background-color: #000000;
-    position:fixed;
-    top:0;
 }
 #prvni {
     margin-top:75px;
@@ -187,7 +131,6 @@ nav {
 #jump-king:after {
     color: #7e7e7e;
 }
-
 img.postava {
     width: 48px;
     height: 48px;
@@ -230,4 +173,51 @@ div.onasimg {
 div.onasimg div {
     padding-left: 20px;
     font-size: 1.5em;
+}
+@media screen and (height: 2340px) and (width: 1080px) {
+    html, body {
+        background-color: rgb(0, 0, 0);
+    }
+    .nadpis2 {
+        margin-left: 150px;
+        margin-top: 40px;
+        font-size: 400%;
+    }
+}
+@media screen and (min-height: 1081px) {
+    .sidebar-button {
+        padding: 40px 45px;
+        border-radius: 20px;
+    }
+    .button {
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    .taskbar, .sidebar {
+        display: none;
+    }
+}
+@media screen and (min-width: 1081px) {
+#taskbar {
+    height:75px;
+}
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+#taskbar-phone, #sidebar-p  {
+    display: none;
+}
+#taskbar, #taskbar-phone {
+    z-index: 1;
+    left:0;
+    width: 100%;
+    background-color: #000000;
+    position:fixed;
+    top:0;
+}
+#bgvideo {
+    height: 360px;
+    width: 640px;
 }
