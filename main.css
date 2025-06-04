@@ -32,14 +32,17 @@ nav {
     float:left;
 }
 .sidebar-button {
-    background-image: url("taskbar.png");
+    background-image: url("taskbar.jpg");
+    background-position: center;
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
     cursor: url("select.cur"), pointer;
     border:3px solid white;
     border-collapse: collapse;
     padding: 15px 20px;
     border-radius: 15px;
     transition-duration: 0.2s;
-    color:white;
+    color: rgba(0,0,0,0);
 }
 .sidebar-button:hover {
     background-color: #d6d6d6;
@@ -214,11 +217,4 @@ img.postava {
 #obr3 {
     position: fixed;
     top:1000px;
-}
-#zkusim {
-    background: url("taskbar.png");
-    background-repeat: 3px 5px no-repeat;
-    border:2px white solid;
-    border-radius: 15px;
-    padding: 20px;
 }
