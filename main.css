@@ -118,7 +118,7 @@ nav {
 #sidebar-p {
     width:  100%;
     position: fixed; /* Stay in place */
-    z-index: -1; /* Stay on top */
+    z-index: 0; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
     background-color: #000000; /* Black*/
@@ -226,4 +226,18 @@ img.postava {
 #obr3 {
     position: fixed;
     top:1000px;
+}
+
+img.onasimg {
+    height: 350px;
+    width: 250px;
+}
+
+div.onasimg {
+    display: flex;
+}
+
+div.onasimg div {
+    padding-left: 20px;
+    font-size: 1.5em;
 }
