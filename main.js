@@ -16,3 +16,12 @@ function toggleNavPhone() {
             document.getElementById("sidebar-p").style.height = "0px";
     }
 }
+
+function acceptCookie() {
+    document.getElementById("cookie").style.display = "none";
+}
+
+
+function iLikeCookies() {
+    document.body.style.background = "red";
+}
