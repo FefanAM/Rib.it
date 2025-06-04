@@ -32,7 +32,7 @@ nav {
     float:left;
 }
 .sidebar-button {
-    background-image: url("taskbar.jpg");
+    background-image: url("images/taskbar.jpg");
     background-position: center;
     background-size: 60% 60%;
     background-repeat: no-repeat;
@@ -48,7 +48,6 @@ nav {
     background-color: #d6d6d6;
 }
 .button {
-    background-image: url("taskbar.png");
     margin-top: 10px;
     margin-left: 10px;
     float:left;
