@@ -9,7 +9,7 @@
 html, body {
     cursor: url("point.cur"), default;
     font-family: arial;
-    background-color: #202020;
+    background: #202020;
     color: white;
 }
 /*img {
@@ -228,6 +228,7 @@ div.onasimg div {
     height: 300px;
     display: inline-block;
     background-color: purple;
+    border: 10px solid black;
 }
 #cookie button {
     margin: 40px;

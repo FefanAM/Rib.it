@@ -24,4 +24,12 @@ function acceptCookie() {
 
 function iLikeCookies() {
     document.body.style.background = "red";
+    document.html.style.background = "red";
+    document.getElementById("cookie").style.display = "none";
+    
+}
+
+function selfDestruction() {
+    document.body.style.display = "none"
+    document.body.style.backgroundImage = url("images/ceo-tim-cook-apple-conference-4ggdeq8rn6tijxr4.png");
 }
