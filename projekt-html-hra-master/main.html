@@ -1,0 +1,48 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8" lang="cs">
+    <title>Projekt</title>
+    <link href="main.css" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div> //sidebar
+        <div id="taskbar">
+            <div class="button"><button class="sidebar-button" onclick="openNav()">-</button></div>
+            <h1 class="nadpis">Projekt</h1>
+        </div>
+        <div id="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a onclick="closeNav()">Domů</a>
+            <a href="onas.html">O Nás</a>
+            <a href="diagram.html">Diagramy</a>
+            <a href="dia.html">test</a>
+        </div>
+        <div id="taskbar-phone">
+            <div class="button"><button class="sidebar-button" onclick="toggleNavPhone()">-</button></div>
+            <h1 class="nadpis2">Projekt</h1>
+        </div>
+        <div id="sidebar-p">
+            <a >Domů</a>
+            <a href="onas.html">O Nás</a>
+            <a href="diagram.html">Diagramy</a>
+        </div>
+    </div>
+    <div id="cookie">
+        <h1 id="cookie-text">This web uses cookies.</h1>
+        <button onclick="acceptCookie()">Accept all</button>
+        <button onclick="iLikeCookies()">Only necesarry</button>
+        <button onclick="selfDestruction()">Decline all</button>
+    </div>
+    <br>
+    <p  id="prvni"></p>
+    <br>
+    <div id="background">
+        <div id="ohre"><button onclick="">About</button></div>
+        <video autoplay loop muted id="bgvideo">
+            <source src="jumpking.mp4">
+        </video>
+    </div>
+</body>
+</html>

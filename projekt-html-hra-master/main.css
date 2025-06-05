@@ -1,0 +1,258 @@
+.nadpis {
+    font-size: 300%;
+    font-family: Arial Rounded MT;
+    color: white;
+    margin-top: 10px;
+    margin-left: 47%;
+}
+body {
+    cursor: url("point.cur"), default;
+    font-family: arial;
+    background: #000000;
+    color: white;
+}
+h2 {
+    font-size: 200%;
+    margin-left:10px;
+}
+#autor {
+    font-size: 200%;
+    margin-left:10px;
+}
+#sidebar-div {
+    float:left;
+}
+.sidebar-button {
+    background-image: url("images/taskbar.jpg");
+    background-position: center;
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    cursor: url("select.cur"), pointer;
+    border:3px solid white;
+    border-collapse: collapse;
+    padding: 15px 20px;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+    color: rgba(0, 0, 0, 0);
+}
+.sidebar-button:hover {
+    background-color: #cfcfcf;
+}
+.button {
+    margin-top: 10px;
+    margin-left: 10px;
+    float:left;
+}
+#sidebar {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.3s;
+}
+#sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+}
+#sidebar-p  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color:#818181;
+    font-size: 50px;
+    display:block;
+    transition: 0.3s;
+}
+#sidebar a:hover, #sidebar-p a:hover {
+    cursor: url("select.cur"), pointer;
+    color: #f1f1f1;
+}
+#sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#sidebar-p .closebtn {
+    position: absolute ;
+    right: 30px;
+    top: 20px;
+    z-index: 1;
+}
+
+#sidebar-p {
+    width:  100%;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    padding-top: 200px;
+    transition: 0.3s;
+    height: 0px;
+}
+#prvni {
+    margin-top:75px;
+}
+.forall {
+    margin-left:10px;
+}
+#obr1 {
+    position:fixed;
+    top: 100px;
+    left: 200px;
+}
+#img1 {
+    width: 60%;
+    height: 60%;
+}
+#obr2 {
+    position:fixed;
+    top:100px;
+    right:300px;
+}
+#img2 {
+    width: 120%;
+    height: 120%;
+}
+#obr3 {
+    position: fixed;
+    top:1000px;
+}
+
+img.onasimg {
+    height: 350px;
+    width: 250px;
+}
+
+div.onasimg {
+    display: flex;
+}
+
+div.onasimg div {
+    padding-left: 20px;
+    font-size: 1.5em;
+}
+@media screen and (height: 2340px) and (width: 1080px) {
+    html, body {
+        background-color: rgb(0, 0, 0);
+    }
+    .nadpis2 {
+        margin-left: 150px;
+        margin-top: 40px;
+        font-size: 400%;
+    }
+}
+@media screen and (min-height: 1081px) {
+    #sidebar-button {
+        padding: 40px 45px;
+        border-radius: 20px;
+    }
+    #button {
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    #taskbar, .sidebar {
+        display: none;
+    }
+}
+@media screen and (min-width: 1081px) {
+#taskbar {
+    height:75px;
+}
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+#taskbar-phone, #sidebar-p  {
+    display: none;
+}
+#taskbar, #taskbar-phone {
+    z-index: 1;
+    left:0;
+    width: 100%;
+    background-color: #000000;
+    position:fixed;
+    top:0;
+}
+#bgvideo {
+    height: 360px;
+    width: 640px;
+}
+#cookie {
+    z-index: 1;
+    color: #ffffff;
+    position: fixed;
+    bottom: 20px;
+    width: 62vh;
+    height: 130px;
+    display: inline-block;
+    background-color: rgb(27, 27, 27);
+    border: 2px solid black;
+    border-radius: 30px;
+}
+#cookie button {
+    margin-left: 25px;
+    height: 50px;
+    width: 150px;
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(177, 177, 177);
+    transition: 0.3s;
+}
+#cookie button:hover {
+    cursor: url("select.cur"), pointer;
+    background-color: #999999;
+}
+#cookie-text {
+    margin-top: 20px;
+    margin-left:25px;
+    font-size: 20px;
+}
+#background video {
+    margin-top: 0;
+    width:100%;
+    height: auto;
+    opacity: 0.1;
+}
+#background {
+    width: 99%;
+    position:absolute;
+    top: 0px;
+    background-color: rgb(0, 0, 0);
+}
+#ohre {
+    z-index: 1;
+    position: absolute;
+    top:45%;
+    left: 49%;
+}
+#ohre button {
+    width: 100px;
+    background-color: #cfcfcf;
+    border: #f1f1f1 2px solid;
+    border-radius: 15px;
+    padding: 10px;
+    transition: 0.3s;
+    font-style: bold;
+    font-size: large;
+
+}
+#ohre button:hover {
+    border: #cfcfcf solid 2px;
+    cursor: url("select.cur"), pointer;
+    background-color: #999999;
+}
