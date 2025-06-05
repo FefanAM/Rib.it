@@ -3,19 +3,14 @@
     font-family: Arial Rounded MT;
     color: white;
     margin-top: 10px;
-    margin-left:15px;
-    display: inline-block;
+    margin-left: 47%;
 }
-html, body {
+body {
     cursor: url("point.cur"), default;
     font-family: arial;
-    background: #202020;
+    background: #000000;
     color: white;
 }
-/*img {
-    width: 80%;
-    height: 80%;
-}*/
 h2 {
     font-size: 200%;
     margin-left:10px;
@@ -23,10 +18,6 @@ h2 {
 #autor {
     font-size: 200%;
     margin-left:10px;
-}
-
-nav {
-    text-align: center;
 }
 #sidebar-div {
     float:left;
@@ -41,11 +32,11 @@ nav {
     border-collapse: collapse;
     padding: 15px 20px;
     border-radius: 15px;
-    transition-duration: 0.2s;
-    color: rgba(0, 0, 0, 0.541);
+    transition-duration: 0.3s;
+    color: rgba(0, 0, 0, 0);
 }
 .sidebar-button:hover {
-    background-color: #d6d6d6;
+    background-color: #cfcfcf;
 }
 .button {
     margin-top: 10px;
@@ -111,32 +102,11 @@ nav {
     transition: 0.3s;
     height: 0px;
 }
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
 #prvni {
     margin-top:75px;
 }
 .forall {
     margin-left:10px;
-}
-#jump-king {
-    color: #7e7e7e;
-    text-decoration:none;
-}
-#jump-king:active {
-    color: #7e7e7e;
-}
-#jump-king:after {
-    color: #7e7e7e;
-}
-img.postava {
-    width: 48px;
-    height: 48px;
-    image-rendering: pixelated;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: crisp-edges;
 }
 #obr1 {
     position:fixed;
@@ -185,15 +155,15 @@ div.onasimg div {
     }
 }
 @media screen and (min-height: 1081px) {
-    .sidebar-button {
+    #sidebar-button {
         padding: 40px 45px;
         border-radius: 20px;
     }
-    .button {
+    #button {
         margin-top: 25px;
         margin-left: 25px;
     }
-    .taskbar, .sidebar {
+    #taskbar, .sidebar {
         display: none;
     }
 }
@@ -222,20 +192,67 @@ div.onasimg div {
     width: 640px;
 }
 #cookie {
+    z-index: 1;
+    color: #ffffff;
     position: fixed;
-    bottom: 0px;
-    width: 100%;
-    height: 300px;
+    bottom: 20px;
+    width: 62vh;
+    height: 130px;
     display: inline-block;
-    background-color: purple;
-    border: 10px solid black;
+    background-color: rgb(27, 27, 27);
+    border: 2px solid black;
+    border-radius: 30px;
 }
 #cookie button {
-    margin: 40px;
+    margin-left: 25px;
     height: 50px;
-    width: 100px;
+    width: 150px;
     color: #000000;
-    border: 3px solid black;
-    border-radius: 10%;
-    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(177, 177, 177);
+    transition: 0.3s;
+}
+#cookie button:hover {
+    cursor: url("select.cur"), pointer;
+    background-color: #999999;
+}
+#cookie-text {
+    margin-top: 20px;
+    margin-left:25px;
+    font-size: 20px;
+}
+#background video {
+    margin-top: 0;
+    width:100%;
+    height: auto;
+    opacity: 0.1;
+}
+#background {
+    width: 99%;
+    position:absolute;
+    top: 0px;
+    background-color: rgb(0, 0, 0);
+}
+#ohre {
+    z-index: 1;
+    position: absolute;
+    top:45%;
+    left: 49%;
+}
+#ohre button {
+    width: 100px;
+    background-color: #cfcfcf;
+    border: #f1f1f1 2px solid;
+    border-radius: 15px;
+    padding: 10px;
+    transition: 0.3s;
+    font-style: bold;
+    font-size: large;
+
+}
+#ohre button:hover {
+    border: #cfcfcf solid 2px;
+    cursor: url("select.cur"), pointer;
+    background-color: #999999;
 }
