@@ -6,7 +6,7 @@
     margin-left: 47%;
 }
 body {
-    cursor: url("point.cur"), default;
+    cursor: wait;
     font-family: arial;
     background: #000000;
     color: white;
