@@ -198,10 +198,12 @@ div.onasimg div {
     top:0;
 }
 #bgvideo {
-    height: auto;
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
     position: fixed;
-    top: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
     opacity: 0.1;
 }
 #cookie {
@@ -259,4 +261,9 @@ div.onasimg div {
     border: #cfcfcf solid 2px;
     cursor: url("select.cur"), pointer;
     background-color: #999999;
+}
+#container {
+    position: absolute;
+    top: 1200px;
+    width: 100%;
 }
