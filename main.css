@@ -226,18 +226,6 @@ div.onasimg div {
     margin-left:25px;
     font-size: 20px;
 }
-#background video {
-    margin-top: 0;
-    width:100%;
-    height: auto;
-    opacity: 0.1;
-}
-#background {
-    width: 99%;
-    position:absolute;
-    top: 0px;
-    background-color: rgb(0, 0, 0);
-}
 #ohre {
     z-index: 1;
     position: absolute;
