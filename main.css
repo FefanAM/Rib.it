@@ -10,6 +10,7 @@ body {
     font-family: arial;
     background: #000000;
     color: white;
+    height: 5000px;
 }
 h2 {
     font-size: 200%;
@@ -188,8 +189,11 @@ div.onasimg div {
     top:0;
 }
 #bgvideo {
-    height: 360px;
-    width: 640px;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 10px;
+    opacity: 0.1;
 }
 #cookie {
     z-index: 1;
