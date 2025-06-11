@@ -268,3 +268,7 @@ div.onasimg div {
     top: 1200px;
     width: 100%;
 }
+#text {
+    text-align: center;
+    font-size: large;
+}
