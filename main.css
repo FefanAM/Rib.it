@@ -1,7 +1,7 @@
 .nadpis {
     font-size: 300%;
     font-family: sans-serif;
-    color: white;
+    color: rgb(193, 255, 193);
     margin: 0;
     position: absolute;
     top: 50%;
@@ -10,7 +10,7 @@
     transform: translate(-50%, -50%);
 }
 #it {
-    color:red;
+    color:rgb(60, 255, 0);
     font-family: sans-serif;
     font-weight: bold;
 }
@@ -34,12 +34,13 @@ h2 {
     float:left;
 }
 .sidebar-button {
+    background-color: rgb(193, 255, 193);
     background-image: url("images/taskbar.jpg");
     background-position: center;
     background-size: 60% 60%;
     background-repeat: no-repeat;
     cursor: url("select.cur"), pointer;
-    border:3px solid white;
+    border:3px solid rgb(149, 255, 149);
     border-collapse: collapse;
     padding: 15px 20px;
     border-radius: 15px;
@@ -47,7 +48,7 @@ h2 {
     color: rgba(0, 0, 0, 0);
 }
 .sidebar-button:hover {
-    background-color: #cfcfcf;
+    background-color: rgb(141, 211, 141);
 }
 .button {
     margin-top: 10px;
@@ -120,25 +121,25 @@ h2 {
     margin-left:10px;
 }
 #obr1 {
-    position:fixed;
+    position:relative;
     top: 100px;
     left: 200px;
 }
 #img1 {
-    width: 60%;
+    width: 50px;
     height: 60%;
 }
 #obr2 {
-    position:fixed;
+    position:relative;
     top:100px;
-    right:300px;
+    right:20px;
 }
 #img2 {
-    width: 120%;
+    width: 50px;
     height: 120%;
 }
 #obr3 {
-    position: fixed;
+    position: relative;
     top:1000px;
 }
 
@@ -215,8 +216,8 @@ div.onasimg div {
     width: 62vh;
     height: 130px;
     display: inline-block;
-    background-color: rgb(27, 27, 27);
-    border: 2px solid black;
+    background-color: black;
+    border: 2px solid rgb(149, 255, 149);
     border-radius: 30px;
 }
 #cookie button {
@@ -224,14 +225,14 @@ div.onasimg div {
     height: 50px;
     width: 150px;
     color: #000000;
-    border: 1px solid black;
+    border: 1px solid rgb(149, 255, 149);
     border-radius: 15px;
-    background-color: rgb(177, 177, 177);
+    background-color: rgb(193, 255, 193);
     transition: 0.3s;
 }
 #cookie button:hover {
     cursor: url("select.cur"), pointer;
-    background-color: #999999;
+    background-color: rgb(141, 211, 141);
 }
 #cookie-text {
     margin-top: 20px;
@@ -249,8 +250,8 @@ div.onasimg div {
 }
 #ohre button {
     width: 100px;
-    background-color: #cfcfcf;
-    border: #f1f1f1 2px solid;
+    background-color: rgb(193, 255, 193);
+    border: rgb(149, 255, 149) 2px solid;
     border-radius: 15px;
     padding: 10px;
     transition: 0.3s;
@@ -259,9 +260,8 @@ div.onasimg div {
 
 }
 #ohre button:hover {
-    border: #cfcfcf solid 2px;
     cursor: url("select.cur"), pointer;
-    background-color: #999999;
+    background-color: rgb(141, 211, 141);
 }
 #container {
     position: absolute;
