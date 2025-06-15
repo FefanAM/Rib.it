@@ -34,13 +34,13 @@ h2 {
     float:left;
 }
 .sidebar-button {
-    background-color: rgb(193, 255, 193);
+    background-color: #c1ffc1;
     background-image: url("images/taskbar.jpg");
     background-position: center;
     background-size: 60% 60%;
     background-repeat: no-repeat;
     cursor: url("select.cur"), pointer;
-    border:3px solid rgb(149, 255, 149);
+    border:3px solid #95ff95;
     border-collapse: collapse;
     padding: 15px 20px;
     border-radius: 15px;
@@ -49,6 +49,7 @@ h2 {
 }
 .sidebar-button:hover {
     background-color: rgb(141, 211, 141);
+    transform: scale(1.1);
 }
 .button {
     margin-top: 10px;
@@ -86,6 +87,7 @@ h2 {
 #sidebar a:hover, #sidebar-p a:hover {
     cursor: url("select.cur"), pointer;
     color: #f1f1f1;
+    transform: scale(1.1);
 }
 #sidebar .closebtn {
     position: absolute;
@@ -142,19 +144,42 @@ h2 {
     position: relative;
     top:1000px;
 }
-
-img.onasimg {
+.onasimg {
     height: 350px;
     width: 250px;
 }
-
-div.onasimg {
+#arrow-container {
     display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    gap: 1.6rem;
 }
-
-div.onasimg div {
-    padding-left: 20px;
-    font-size: 1.5em;
+.arrow {
+    height: inherit;
+    width: 2.5rem;
+    font-size: 3rem;
+    background-color: #c1ffc1;
+    border: 3px solid #95ff95;
+}
+#onas-container {
+    display: flex;
+    height: 350px;
+    width: 1200px;
+    overflow: hidden;
+    white-space: nowrap;
+    flex-shrink: 0;
+    gap: 20px;
+}
+.person {
+    display: flex;
+    width: 1200px;
+    white-space: normal;
+    max-height: 350px;
+    flex-shrink: 0;
+    gap: 20px;
 }
 @media screen and (height: 2340px) and (width: 1080px) {
     html, body {
