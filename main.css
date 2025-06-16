@@ -163,6 +163,16 @@ h2 {
     font-size: 3rem;
     background-color: #c1ffc1;
     border: 3px solid #95ff95;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.arrow:hover {
+    transform: scale(1.025);
+    background-color: rgb(141, 211, 141);
+}
+.arrow:active {
+    transform: scale(0.95);
+    background-color: rgb(85, 133, 85);
 }
 #onas-container {
     display: flex;
