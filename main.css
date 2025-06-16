@@ -120,7 +120,7 @@ h2 {
     height: 0px;
 }
 #prvni {
-    margin-top:75px;
+    margin-top:90px;
 }
 .forall {
     margin-left:10px;
@@ -328,5 +328,8 @@ h2 {
 }
 #text {
     text-align: center;
+    font-size: x-large;
+}
+.osobe {
     font-size: x-large;
 }
