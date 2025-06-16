@@ -258,6 +258,7 @@ h2 {
 #cookie button:hover {
     cursor: url("select.cur"), pointer;
     background-color: rgb(141, 211, 141);
+    transform: scale(1.1);
 }
 #cookie-text {
     margin-top: 20px;
@@ -287,6 +288,7 @@ h2 {
 #ohre button:hover {
     cursor: url("select.cur"), pointer;
     background-color: rgb(141, 211, 141);
+    transform: scale(1.1);
 }
 #container {
     position: absolute;
