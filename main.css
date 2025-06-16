@@ -1,6 +1,10 @@
+@font-face {
+  font-family: 'pixelify';
+  src: url('PixelifySans-VariableFont_wght.ttf') format('truetype');
+}
 .nadpis {
     font-size: 300%;
-    font-family: sans-serif;
+    font-family: pixelify;
     color: rgb(193, 255, 193);
     margin: 0;
     position: absolute;
@@ -11,12 +15,11 @@
 }
 #it {
     color:rgb(60, 255, 0);
-    font-family: sans-serif;
     font-weight: bold;
 }
 body {
-    cursor: url(point.cur),default;
-    font-family: arial;
+    cursor: url(cursors/def-new.cur),default;
+    font-family: pixelify;
     background: #000000;
     color: white;
     height: 5000px;
@@ -39,7 +42,7 @@ h2 {
     background-position: center;
     background-size: 60% 60%;
     background-repeat: no-repeat;
-    cursor: url("select.cur"), pointer;
+    cursor: url(cursors/link-new.cur), pointer;
     border:3px solid #95ff95;
     border-collapse: collapse;
     padding: 15px 20px;
@@ -60,7 +63,7 @@ h2 {
     height: 100%;
     width: 0px;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     left: 0;
     background-color: #000;
@@ -85,7 +88,7 @@ h2 {
     transition: 0.3s;
 }
 #sidebar a:hover, #sidebar-p a:hover {
-    cursor: url("select.cur"), pointer;
+    cursor: url(cursors/link-new.cur), pointer;
     color: #f1f1f1;
     transform: scale(1.1);
 }
@@ -149,6 +152,7 @@ h2 {
     width: 250px;
 }
 #arrow-container {
+    font-family: pixelify;
     display: flex;
     flex-shrink: 0;
     flex-grow: 0;
@@ -157,7 +161,8 @@ h2 {
     transform: translate(-50%);
     gap: 1.6rem;
 }
-.arrow {
+#arrow-container button {
+    cursor: url(cursors/link-new.cur), pointer;
     height: inherit;
     width: 2.5rem;
     font-size: 3rem;
@@ -166,7 +171,21 @@ h2 {
     border-radius: 15px;
     transition: 0.3s;
 }
-.arrow:hover {
+#arrow1 {
+    color: rgba(0, 0, 0, 0);
+    background-image: url(images/arrow1.png);
+    background-position: center;
+    background-size: 70% 7%;
+    background-repeat: no-repeat;
+}
+#arrow2 {
+    color: rgba(0, 0, 0, 0);
+    background-image: url(images/arrow2.png);
+    background-position: center;
+    background-size: 70% 7%;
+    background-repeat: no-repeat;
+}
+#arrow-container button:hover {
     transform: scale(1.025);
     background-color: rgb(141, 211, 141);
 }
@@ -227,10 +246,10 @@ h2 {
     display: none;
 }
 #taskbar, #taskbar-phone {
-    z-index: 1;
+    z-index: 2;
     left:0;
     width: 100%;
-    background-color: #000000;
+    background-color: #000000a1;
     position:fixed;
     top:0;
 }
@@ -256,6 +275,7 @@ h2 {
     border-radius: 30px;
 }
 #cookie button {
+    font-family: pixelify;
     margin-left: 25px;
     height: 50px;
     width: 150px;
@@ -266,7 +286,7 @@ h2 {
     transition: 0.3s;
 }
 #cookie button:hover {
-    cursor: url("select.cur"), pointer;
+    cursor: url(cursors/link-new.cur), pointer;
     background-color: rgb(141, 211, 141);
     transform: scale(1.1);
 }
@@ -285,6 +305,7 @@ h2 {
     transform: translate(-50%, -50%);
 }
 #ohre button {
+    font-family: pixelify;
     width: 100px;
     background-color: rgb(193, 255, 193);
     border: rgb(149, 255, 149) 2px solid;
@@ -292,11 +313,11 @@ h2 {
     padding: 10px;
     transition: 0.3s;
     font-style: bold;
-    font-size: large;
+    font-size: x-large;
 
 }
 #ohre button:hover {
-    cursor: url("select.cur"), pointer;
+    cursor: url(cursors/link-new.cur), pointer;
     background-color: rgb(141, 211, 141);
     transform: scale(1.1);
 }
@@ -307,5 +328,5 @@ h2 {
 }
 #text {
     text-align: center;
-    font-size: large;
+    font-size: x-large;
 }
