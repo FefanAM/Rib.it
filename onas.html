@@ -18,7 +18,7 @@
     <div id="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="main.html">Domů</a>
-        <a href="onas.html">O Nás</a>
+        <a onclick="window.scrollTo({top:0, left:0, behavior: 'smooth'}); closeNav()">O Nás</a>
         <a href="diagram.html">Diagramy</a>
     </div>
     <div id="taskbar-phone">
@@ -30,8 +30,7 @@
         <a href="onas.html">O Nás</a>
         <a href="diagram.html">Diagramy</a>
     </div>
-<h2 id="prvni">Autoři:</h2>
-<p id="autor">Pilulka, Piškot, Pepan</p>
+    <p id="prvni" style="color: rgba(0,0,0,0);"></p>
 <div id="arrow-container">
     <button id="arrow1" onclick="document.getElementById('onas-container').scrollBy({top:0, left:-1220, behavior: 'smooth'})"><</button>
     <div id="onas-container">
