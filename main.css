@@ -125,8 +125,16 @@ h2 {
 .forall {
     margin-left:10px;
 }
+#obr-nav {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
 #obr1, #obr2, #obr3 {
-    color:#000;
+    color:#000000;
     height: 70vh;
     width: auto;
     z-index: 1;
@@ -134,7 +142,7 @@ h2 {
     flex-grow: 0;
 }
 #diagram-images {
-    background-color: #000;
+    background-color: #000000;
     height: fit-content;
     display: flex;
     gap: 1.7rem;
@@ -142,6 +150,7 @@ h2 {
     top: 10vh;
     left: 50%;
     transform: translate(-50%);
+    transition-duration: 0.3s;
 }
 .onasimg {
     height: 350px;
