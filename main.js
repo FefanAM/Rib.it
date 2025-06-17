@@ -30,3 +30,11 @@ function iLikeCookies() {
 function selfDestruction() {
     document.body.style.display = "none"
 }
+
+function leftArrow() {
+    document.getElementById('onas-container').scrollBy({top:0, left:-1220, behavior: 'smooth'})
+}
+
+function rightArrow() {
+    document.getElementById('onas-container').scrollBy({top:0, left:1220, behavior: 'smooth'})
+}
