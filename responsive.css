@@ -1,0 +1,28 @@
+@media screen and (max-width:799px) {
+    #arrow-container > * {
+        display: none;
+    }
+    #onas-container-phone {
+        display: block;
+    }
+     #onas-container-phone div {
+        margin-bottom: 30px;
+    }
+    footer {
+        display: none;
+    }
+    #diagram-images-phone {
+        display: block;
+        text-align: center;
+        margin-top: 100px;
+    }
+    #diagram-images {
+        display: none;
+    }
+    #obr1-phone, #obr2-phone, #obr3-phone {
+        width: 80vw;
+        height: auto;
+        margin-bottom: 5px;
+        margin-top: 30px;
+    }
+}

@@ -4,11 +4,13 @@
     <meta charset="utf-8" lang="en">
     <title>About us | Rib.it</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
     <script src="main.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 <div id="taskbar">
@@ -34,6 +36,8 @@
      <video autoplay loop muted id="bgvideo">
             <source src="jumpking.mp4">
         </video>
+
+<p class="my">Jsme skupina developerů ze střední průmyslové školy Jana Palacha na Kladně.<br><br>Naším cílem je vytvořit úspěšnou (fungující) hru.x</p>
 <div id="arrow-container">
     <button id="arrow1" onclick="leftArrow()"><</button>
     <div id="onas-container">
@@ -67,6 +71,47 @@
         </div>
     </div>
     <button id="arrow2" onclick="rightArrow()">></button>
-</div>   
+</div>
+<div id="onas-container-phone">
+        <div class="person">
+            <img class="onasimg" src="images/profil obr.png">
+            <div class="onas-description">
+            <h2>Jan Roškot</h2>
+            <h3>PROGRAMÁTOR</h3>
+            <p class="osobe">Největší postiženec co kdy existoval.</p>
+            </div>
+        </div>    
+        <div class="person">
+            <img class="onasimg" src="images/placeholder.jpg">
+            <div class="onas-description">
+            <h2>Antonín Mikulka</h2>
+            <h3>PROGRAMÁTOR</h3>
+            <p class="osobe">
+            něco si sem napiš tondo :>
+            </p>
+            </div>
+        </div>
+        <div class="person">
+            <img class="onasimg" src="images/placeholder.jpg">
+            <div class="onas-description">
+            <h2>Jakub Zeman</h2>
+            <h3>DESIGNER</h3>
+            <p class="osobe">
+            Typek chce přestoupit jinam kamo...   sad
+            </p>
+            </div>
+        </div>
+    </div>
+<footer>
+    <p>© 2025 copyright reserved</p>
+    <div id="footer-center">
+        <p>Contact us:</p>
+        <a id="discord" href="#"><i class="fa-brands fa-discord"></i></a>
+    </div>
+    <div id="footer-right">
+        <p>Project:</p>
+        <a id="github" href="https://github.com/FefanAM/projekt-html-hra"><i class="fa-brands fa-github"></i></a>
+    </div>
+</footer>   
 </body>
 </html>
