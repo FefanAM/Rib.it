@@ -22,7 +22,6 @@ body {
     font-family: pixelify;
     background: #000000;
     color: white;
-    height: 5000px;
     overflow-x: hidden;
 }
 h2 {
@@ -106,7 +105,6 @@ h2 {
     top: 20px;
     z-index: 1;
 }
-
 #sidebar-p {
     width:  100%;
     position: fixed;
@@ -245,6 +243,11 @@ h2 {
     color: rgb(193, 255, 193);
     margin-left: 1rem;
 }
+.my {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
 @media screen and (height: 2340px) and (width: 1080px) {
     html, body {
         background-color: rgb(0, 0, 0);
@@ -363,6 +366,7 @@ h2 {
     position: absolute;
     top: 1200px;
     width: 100%;
+    height: 90vh;
 }
 #text {
     text-align: center;
@@ -370,4 +374,12 @@ h2 {
 }
 .osobe {
     font-size: x-large;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    display: flex;
+    gap: 30px;
+    width: 100vw;
 }
