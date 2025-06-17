@@ -48,6 +48,7 @@ function openDia() {
     document.getElementById("obr1").style.zIndex = "2";
     document.getElementById("obr1").style.height= "98vh";
     document.getElementById("obr-nav").style.opacity= "1";
+    document.getElementById("obr-nav").style.zIndex= "1";
     document.getElementById("obrdiv2").style.opacity= "0";
     document.getElementById("obrdiv3").style.opacity= "0";
     }
@@ -63,6 +64,7 @@ function openDia2() {
     document.getElementById("obr2").style.zIndex = "2";
     document.getElementById("obr2").style.height= "98vh";
     document.getElementById("obr-nav").style.opacity= "1";
+    document.getElementById("obr-nav").style.zIndex= "1";
     document.getElementById("obrdiv1").style.opacity= "0";
     document.getElementById("obrdiv3").style.opacity= "0";
     }
@@ -78,6 +80,7 @@ function openDia3() {
     document.getElementById("obr3").style.zIndex = "2";
     document.getElementById("obr3").style.height= "98vh";
     document.getElementById("obr-nav").style.opacity= "1";
+    document.getElementById("obr-nav").style.zIndex= "1";
     document.getElementById("obrdiv2").style.opacity= "0";
     document.getElementById("obrdiv1").style.opacity= "0";
     }
@@ -96,6 +99,7 @@ function closeDia() {
         Element.style.zIndex= "1";
     })
     document.getElementById("obr-nav").style.opacity = "0";
+    document.getElementById("obr-nav").style.zIndex= "-10";
     document.getElementById("taskbar").style.opacity = "1";
     document.getElementById("taskbar").style.zIndex = "2";
 }

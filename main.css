@@ -124,6 +124,7 @@ h2 {
     margin-left:10px;
 }
 #obr-nav {
+    z-index: -10;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -252,6 +253,7 @@ h2 {
     display: none;
 }
 #taskbar, #taskbar-phone {
+    height: 70px;
     z-index: 2;
     left:0;
     width: 100%;
@@ -264,6 +266,7 @@ h2 {
     min-height: 100%;
     position: fixed;
     left: 50%;
+    z-index: -10;
     transform: translate(-50%, -50%);
     top: 50%;
     opacity: 0.1;
@@ -363,6 +366,7 @@ h2 {
     cursor: url(cursors/def-new.cur), pointer;
 }
 footer {
+    z-index: -1;
     position: absolute;
     padding-left: 30px;
     bottom: 0;
@@ -377,6 +381,7 @@ footer {
     transform: translate(0, 33%);
     cursor: url(cursors/link-new.cur), pointer;
     color: #c1ffc1;
+    z-index: 1;
 }
 #footer-center {
     position: absolute;
@@ -396,4 +401,7 @@ footer {
 }
 #diagram-images-phone {
     display: none;
+}
+#jo {
+    font-size: 300%;
 }
