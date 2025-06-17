@@ -132,6 +132,32 @@ h2 {
     z-index: 1;
     flex-shrink: 0;
     flex-grow: 0;
+    transition: 0.15s;
+    top: 0px;
+}
+#obr1:hover {
+    opacity: 0.2;
+    z-index: -10;
+}
+#obr2:hover {
+    opacity: 0.2;
+    z-index: -10;
+}
+#obr3:hover {
+    opacity: 0.2;
+    z-index: -10;
+}
+#diagram-images div p {
+    position: relative;
+    top: -50%;
+    left: 25;
+    transform: translate(-50%,);
+    z-index: -5;
+}
+#diagram-images div {
+    text-align: center;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 #diagram-images {
     background-color: #000;
