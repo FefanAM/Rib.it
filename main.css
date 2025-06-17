@@ -366,7 +366,7 @@ h2 {
     position: absolute;
     top: 1200px;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 #text {
     text-align: center;
@@ -377,9 +377,30 @@ h2 {
 }
 footer {
     position: absolute;
+    padding-left: 30px;
     bottom: 0;
+    left: 50%;
     background-color: #000;
     display: flex;
-    gap: 30px;
-    width: 100vw;
+    height: 80px;
+    width: 100%;
+    transform: translate(-50.3%);
+}
+#discord, #github {
+    transform: translate(0, 33%);
+    cursor: url(cursors/link-new.cur), pointer;
+    color: #c1ffc1;
+}
+#footer-center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    gap: 10px;
+}
+#footer-right {
+    position: absolute;
+    right: 2%;
+    display: flex;
+    gap: 10px;
 }
