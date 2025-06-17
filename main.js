@@ -38,33 +38,92 @@ function rightArrow() {
     document.getElementById('onas-container').scrollBy({top:0, left:1220, behavior: 'smooth'})
 }
 function openDia() {
-    
-    document.getElementById("obr2").style.opacity = "0.2";
-    document.getElementById("obr3").style.opacity = "0.2";
+    if (document.getElementById("obrdiv1").style.opacity == "0") {
+        javascript:void(0)
+    }
+    else {
     document.getElementById("taskbar").style.opacity = "0.2";
     document.getElementById("taskbar").style.zIndex= "0";
     document.getElementById("obr1").style.transform= "translate(85%, -9%)";
-    document.getElementById("obr1").style.zIndex = "4";
+    document.getElementById("obr1").style.zIndex = "2";
     document.getElementById("obr1").style.height= "98vh";
     document.getElementById("obr-nav").style.opacity= "1";
+    document.getElementById("obrdiv2").style.opacity= "0";
+    document.getElementById("obrdiv3").style.opacity= "0";
+    }
 }
 function openDia2() {
-    document.getElementById("obr1").style.opacity = "0.2";
-    document.getElementById("obr3").style.opacity = "0.2";
+    if (document.getElementById("obrdiv2").style.opacity == "0") {
+        javascript:void(0)
+    }
+    else {
     document.getElementById("taskbar").style.opacity = "0.2";
     document.getElementById("taskbar").style.zIndex= "0";
     document.getElementById("obr2").style.transform= "translate(0%, -9%)";
-    document.getElementById("obr2").style.zIndex = "4";
+    document.getElementById("obr2").style.zIndex = "2";
     document.getElementById("obr2").style.height= "98vh";
     document.getElementById("obr-nav").style.opacity= "1";
+    document.getElementById("obrdiv1").style.opacity= "0";
+    document.getElementById("obrdiv3").style.opacity= "0";
+    }
 }
 function openDia3() {
-    document.getElementById("obr1").style.opacity = "0.2";
-    document.getElementById("obr2").style.opacity = "0.2";
+    if (document.getElementById("obrdiv3").style.opacity == "0") {
+        javascript:void(0)
+    }
+    else {
     document.getElementById("taskbar").style.opacity = "0.2";
     document.getElementById("taskbar").style.zIndex= "0";
     document.getElementById("obr3").style.transform= "translate(-85%, -9%)";
-    document.getElementById("obr3").style.zIndex = "4";
+    document.getElementById("obr3").style.zIndex = "2";
     document.getElementById("obr3").style.height= "98vh";
     document.getElementById("obr-nav").style.opacity= "1";
+    document.getElementById("obrdiv2").style.opacity= "0";
+    document.getElementById("obrdiv1").style.opacity= "0";
+    }
+}
+function closeDia() {
+    const elements = document.querySelectorAll("#obrdiv1, #obrdiv2, #obrdiv3");
+    elements.forEach(Element => {
+        Element.style.opacity= "1";
+        Element.style.zIndex= "1";
+        
+    })
+    const elements2 = document.querySelectorAll("#obr1, #obr2, #obr3")
+    elements2.forEach(Element => {
+        Element.style.height= "70vh";
+        Element.style.transform= "translate(0%, 0%)";
+        Element.style.zIndex= "1";
+    })
+    document.getElementById("obr-nav").style.opacity = "0";
+    document.getElementById("taskbar").style.opacity = "1";
+    document.getElementById("taskbar").style.zIndex = "2";
+}
+function left() {
+    if (document.getElementById("obr1").style.zIndex > "1") {
+        closeDia()
+        openDia3()
+    }
+    else if (document.getElementById("obr3").style.zIndex > "1"){
+        closeDia()
+        openDia2()
+    }
+    else {
+        closeDia()
+        openDia()
+    }
+}
+function right() {
+    if (document.getElementById("obr1").style.zIndex > "1") {
+        closeDia()
+        openDia2()
+    }
+    else if (document.getElementById("obr3").style.zIndex > "1"){
+        closeDia()
+        openDia()
+    }
+    else {
+        closeDia()
+        openDia3()
+    }
 }

@@ -159,7 +159,7 @@ h2 {
     position: relative;
     top: -50%;
     left: 25;
-    transform: translate(-50%,);
+    transform: translate(0%);
     z-index: -5;
 }
 #diagram-images div {
@@ -370,4 +370,23 @@ h2 {
 }
 .osobe {
     font-size: x-large;
+}
+#obr-nav button {
+    margin: 2px;
+    color: white;
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: #000 solid 2px;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+#obr-nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: #000 solid 2px;
+    padding: 5px;
+    border-radius: 20px;
+}
+#obr-nav button:hover {
+    transform: scale(1.1);
+    cursor: url(cursors/def-new.cur), pointer;
 }

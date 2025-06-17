@@ -30,28 +30,20 @@
         <a href="onas.html">O Nás</a>
         <a href="diagram.html">Diagramy</a>
     </div>    
-    <div id="dim">
-        <div id="diagram-images">
-            <img id="obr1" onclick="openDia()" src="images/input.drawio.png">
-            <img id="obr2" onclick="openDia2()" src="images/ground-check.drawio.png">
-            <img id="obr3" onclick="openDia3()" src="images/time.drawio.png">
-        </div>
-    </div>
-    <div id="obr-nav" style="z-index: 3;"><button>&times;</button><button><</button><button>></button></div>
+    <div id="obr-nav" style="z-index: 3;"><button onclick="closeDia()">&times;</button><button onclick="left()"><</button><button onclick="right()">></button></div>
 <div id="diagram-images">
-    <div>
+    <div onclick="openDia()" id="obrdiv1">
         <img id="obr1" src="images/input.drawio.png">
-        <p>Diagram vstupů</p>
+        <p>Vstupy</p>
     </div>
-    <div>
+    <div onclick="openDia2()" id="obrdiv2">
         <img id="obr2" src="images/ground-check.drawio.png">
-        <p>Diagram pro zjištění země</p>
+        <p>Volný pád</p>
     </div>
-    <div>
+    <div onclick="openDia3()" id="obrdiv3">
         <img id="obr3" src="images/time.drawio.png">
-        <p>Diagram pro časovač</p>
+        <p>Časovač</p>
     </div>
 </div>
-
 </body>
 </html>
