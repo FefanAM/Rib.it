@@ -248,38 +248,6 @@ h2 {
     margin-top: 10rem;
     margin-bottom: 10rem;
 }
-@media screen and (height: 2340px) and (width: 1080px) {
-    html, body {
-        background-color: rgb(0, 0, 0);
-    }
-    .nadpis2 {
-        margin-left: 150px;
-        margin-top: 40px;
-        font-size: 400%;
-    }
-}
-@media screen and (min-height: 1081px) {
-    #sidebar-button {
-        padding: 40px 45px;
-        border-radius: 20px;
-    }
-    #button {
-        margin-top: 25px;
-        margin-left: 25px;
-    }
-    #taskbar, .sidebar {
-        display: none;
-    }
-}
-@media screen and (min-width: 1081px) {
-#taskbar {
-    height:75px;
-}
-}
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
 #taskbar-phone, #sidebar-p  {
     display: none;
 }
@@ -403,4 +371,10 @@ footer {
     right: 2%;
     display: flex;
     gap: 10px;
+}
+#onas-container-phone {
+    display: none;
+}
+#diagram-images-phone {
+    display: none;
 }
