@@ -131,3 +131,22 @@ function right() {
         openDia3()
     }
 }
+
+// Smooth scroll
+function smoothScrollTo(top) {
+    const startY = window.scrollY;
+    const change = top - startY;
+    const duration = 500;
+    let startTime = null;
+
+    function animateScroll(currentTime) {
+        if (!startTime) startTime = currentTime;
+        const time = currentTime - startTime;
+        const val = Math.min(time / duration, 1);
+        window.scrollTo(0, startY + change * val);
+        if (val < 1) {
+            requestAnimationFrame(animateScroll);
+        }
+    }
+    requestAnimationFrame(animateScroll);
+}

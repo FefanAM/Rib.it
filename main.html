@@ -20,7 +20,7 @@
         </div>
         <div id="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a onclick="window.scrollTo({top:0, left:0, behavior: 'smooth'}); closeNav()">Domů</a>
+            <a onclick="smoothScrollTo(0)">Domů</a>
             <a href="onas.html">O Nás</a>
             <a href="diagram.html">Diagramy</a>
         </div>
@@ -34,7 +34,7 @@
     <br>
     <p  id="prvni"></p>
     <br>
-        <div id="ohre"><button onclick="window.scrollTo({top:1100, left:0, behavior: 'smooth'})">O hře</button></div>
+        <div id="ohre"><button onclick="smoothScrollTo(1100)">O hře</button></div>
         <video autoplay loop muted id="bgvideo">
             <source src="jumpking.mp4">
         </video>
