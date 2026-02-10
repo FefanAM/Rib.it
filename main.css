@@ -134,7 +134,7 @@ h2 {
 }
 #obr1, #obr2, #obr3 {
     color:#000000;
-    height: 70vh;
+    height: 50vh;
     width: auto;
     z-index: 1;
     flex-shrink: 0;
@@ -167,7 +167,7 @@ h2 {
     flex-grow: 0;
 }
 #diagram-images {
-    background-color: #000000;
+    background-color: #00000000;
     height: fit-content;
     display: flex;
     gap: 1.7rem;
